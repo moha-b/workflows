@@ -3,7 +3,7 @@ name: Build
 on:
   pull_request:
     branches:
-      - $default-branch
+      - main
 
 jobs:
   build:
