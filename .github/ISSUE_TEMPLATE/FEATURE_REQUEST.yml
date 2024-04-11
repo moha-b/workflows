@@ -1,0 +1,54 @@
+name: 🚀 Feature Request
+description: Suggest an creative idea
+title: "[FEATURE]: <title>"
+labels: ["feature","enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit this feature request!
+  - type: dropdown
+    attributes:
+      multiple: false
+      label: Type of Feature
+      description: Select the type of feature request.
+      options:
+        - "✨ New Feature"
+        - "📝 Documentation"
+        - "🎨 Style and UI"
+        - "🔨 Code Refactor"
+        - "⚡ Performance Improvements"
+        - "🧪 New Test"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the new feature in detail.
+      placeholder: Provide a comprehensive overview of the proposed feature.
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: Explain the benefits of implementing this feature.
+      placeholder: Describe how users and the project would benefit from this addition.
+    validations:
+      required: true
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Outline the use cases or scenarios where this feature would be beneficial.
+      placeholder: Describe specific situations where the feature would be valuable.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Contribute 🤔
+      description: If you are a developer and want to work on this issue yourself, you can check this box and wait for maintainer response. We welcome contributions!
+      options:
+        - label: I'm ready to work on this issue!
+          required: false
