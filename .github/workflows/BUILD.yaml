@@ -27,4 +27,4 @@ jobs:
       run: flutter build apk
 
     - name: Build IPA
-      run: flutter build ios --release --no-codesign
+      run: flutter build ios
